@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "../css/Login.css";
 
-export default function Login() {
+export default function aLogin() {
   const [email, setEmail] = useState('');
   
   const [password, setPassword]
@@ -75,7 +75,7 @@ export default function Login() {
         localStorage.setItem('refreshToken', data.refreshToken);
         
         // Send both tokens to the Chrome extension
-        chrome.runtime.sendMessage("nnmmeljlhmhpnfphcpifdahblfmhlilm", 
+        chrome.runtime.sendMessage("kanfnldfkpmaeomagjkmildfonfmpccb", 
           { action: "storeTokens", accessToken: data.accessToken, refreshToken: data.refreshToken }, 
           function(response) {
             if (chrome.runtime.lastError) {
