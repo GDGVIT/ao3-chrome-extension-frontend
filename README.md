@@ -43,8 +43,8 @@ git clone https://github.com/GDGVIT/ao3-chrome-extension-frontend.git
 cd ao3-chrome-extension-frontend
 npm install
 ```
-```shellscript
 Start the development server:
+```shellscript
 npm run dev
 ```
 
